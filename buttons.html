@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <button id="countUp">Up</button>
+  <p id="count"></p>
+  <button id="countDown">Down</button>
+
+  <script>
+
+// Event listener, two things, First is name of event (use 'click'), Second is a function]
+    let counter = 0
+    document.getElementById('countUp').addEventListener('click', () =>{
+      counter ++     
+      console.log(counter)
+      document.getElementById('count').innerHTML = counter
+    })
+    document.getElementById('countDown').addEventListener('click', () =>{
+      counter --     
+      console.log(counter)
+      document.getElementById('count').innerHTML = counter
+    })
+
+
+  </script>
+</body>
+</html>
